@@ -1,0 +1,16 @@
+body {
+    background: #444;
+    font-family: "courier new", courier, monospace;
+	font-size: 18px;
+	padding: 20px 20%;
+}
+ul, li {
+	list-style: none;
+	color: #fff;
+}
+.objectKey {
+	color: rgb(166,226,45);
+}
+.arrayKey {
+	color: rgb(220, 220, 116)
+}
