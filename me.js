@@ -1,37 +1,4 @@
 /* https://medium.com/humans-create-software/semicolons-cannot-save-you-bf991756174e */
-fetch('me.json').then(
-    response => response.json()
-).then(
-    data => drawMe(data)
-)
-
-const treatMe = (data, parent, key) => {
-    key = key || ''
-
-    if( typeof data === 'string'){
-        createLi('string', parent, key, data)
-    }
-
-    if( typeof data === 'object' && !data.length){
-        const ul = document.createElement('ul')
-        createLi('objectOpen', parent, key)
-        parent.appendChild(ul)
-        for(let x in data){
-            treatMe(data[x], ul, x)
-        }
-        createLi('objectClose', parent)
-    }
-
-    if( typeof data === 'object' && data.length){
-        const ul = document.createElement('ul')
-        createLi('arrayOpen', parent, key)
-        parent.appendChild(ul)
-        data.forEach( y => treatMe(y, ul) )
-        createLi('arrayClose', parent)
-    }
-    
-}
-
 const createLi = (type, parent, key, data) => {
     let li = document.createElement('li')
     switch (type) {
@@ -69,8 +36,43 @@ const createLi = (type, parent, key, data) => {
     parent.appendChild(li)
 }
 
+const treatMe = (data, parent, key) => {
+    key = key || ''
+
+    if( typeof data === 'string'){
+        createLi('string', parent, key, data)
+    }
+
+    if( typeof data === 'object' && !data.length){
+        const ul = document.createElement('ul')
+        createLi('objectOpen', parent, key)
+        parent.appendChild(ul)
+        for(let x in data){
+            treatMe(data[x], ul, x)
+        }
+        createLi('objectClose', parent)
+    }
+
+    if( typeof data === 'object' && data.length){
+        const ul = document.createElement('ul')
+        createLi('arrayOpen', parent, key)
+        parent.appendChild(ul)
+        data.forEach( y => treatMe(y, ul) )
+        createLi('arrayClose', parent)
+    }
+    
+}
+
 const body = document.body
 const parentUL = document.createElement('ul')
+
+const handleLastComma = () => {
+    const allLis = document.querySelectorAll('li')
+    for (let i=allLis.length-1; i>allLis.length-3; i--){
+        allLis[i].textContent = allLis[i].textContent.slice(0, -1)
+    }
+
+}
 
 const drawMe = me =>{
     createLi('objectOpen', body, '')
@@ -82,10 +84,6 @@ const drawMe = me =>{
     handleLastComma()
 }
 
-const handleLastComma = () => {
-    const allLis = document.querySelectorAll('li')
-    for (let i=allLis.length-1; i>allLis.length-3; i--){
-        allLis[i].textContent = allLis[i].textContent.slice(0, -1)
-    }
-
-}
+fetch('me.json').then(
+    response => response.json()
+).then(drawMe);
