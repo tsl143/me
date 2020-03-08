@@ -1,203 +1,203 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>Trishul</title>
-	<meta charset="UTF-8">
-    <link rel="icon" href="favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
-	<style>
-		body {
-			color: #444;
-			margin: 0;
-			font-family: 'Oswald', Arial, Helvetica, sans-serif;
-			margin: 0 15%;
-			box-sizing: border-box;
-		}
-		p, li {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 14px;
-		}
-		header, section {
-			border-bottom: 3px solid #888;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 20px;
-			padding: 0 60px 20px;
-			flex-flow: row wrap;
-		}
-		header {
-			padding-top: 20px;
-		}
-		section {
-			flex: 0 0 100%;
-		}
-		#name {
-			font-size: 40px;
-			letter-spacing: 1;
-		}
-		#designation {
-			color: #888;
-			font-size: 30px;
-		}
-		#details{
-			text-align: right;
-			line-height: 1.5;
-		}
-		#details img{
-			width: 25px;
-		}
-		.info {
-				margin: 10px 0;
+	<head>
+		<title>Trishul</title>
+		<meta charset="UTF-8">
+			<link rel="icon" href="favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+		<style>
+			body {
+				color: #444;
+				margin: 0;
+				font-family: 'Oswald', Arial, Helvetica, sans-serif;
+				margin: 0 15%;
+				box-sizing: border-box;
 			}
-		.info span {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: 5px;
-		}
-		section .heading {
-			font-size: 25px;
-			letter-spacing: 1.5;
-			flex-basis: 250px;
-			text-transform: uppercase;
-		}
-		section .details {
-			flex-basis: calc(100% - 252px);
-			border-left: 2px solid #888;
-		}
-		section .heading .dash {
-			width: 60px;
-			border-top: 3px solid #444;
-		}
-		.entry {
-			padding-left: 20px;
-			margin-bottom: 20px;
-		}
-		.entry:last-child {
-			margin-bottom: 0;
-		}
-		.entry .head {
-			display: flex;
-			font-size: 20px;
-			font-weight: bold;
-			justify-content: space-between;
-			align-items: baseline;
-		}
-		.entry .tenure {
-			font-size: 16px;
-			font-weight: normal;
-		}
-		.entry p, .entry li {
-			margin: 5px 0;
-			line-height: 1.4;
-		}
-		.entry li i{
-			font-weight: bold
-		}
-		ul {
-			padding-left: 10px;
-		}
-		
-	</style>
-</head>
+			p, li {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+			}
+			header, section {
+				border-bottom: 3px solid #888;
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 20px;
+				padding: 0 60px 20px;
+				flex-flow: row wrap;
+			}
+			header {
+				padding-top: 20px;
+			}
+			section {
+				flex: 0 0 100%;
+			}
+			#name {
+				font-size: 40px;
+				letter-spacing: 1;
+			}
+			#designation {
+				color: #888;
+				font-size: 30px;
+			}
+			#details{
+				text-align: right;
+				line-height: 1.5;
+			}
+			#details img{
+				width: 25px;
+			}
+			.info {
+					margin: 10px 0;
+				}
+			.info span {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 5px;
+			}
+			section .heading {
+				font-size: 25px;
+				letter-spacing: 1.5;
+				flex-basis: 250px;
+				text-transform: uppercase;
+			}
+			section .details {
+				flex-basis: calc(100% - 252px);
+				border-left: 2px solid #888;
+			}
+			section .heading .dash {
+				width: 60px;
+				border-top: 3px solid #444;
+			}
+			.entry {
+				padding-left: 20px;
+				margin-bottom: 20px;
+			}
+			.entry:last-child {
+				margin-bottom: 0;
+			}
+			.entry .head {
+				display: flex;
+				font-size: 20px;
+				font-weight: bold;
+				justify-content: space-between;
+				align-items: baseline;
+			}
+			.entry .tenure {
+				font-size: 16px;
+				font-weight: normal;
+			}
+			.entry p, .entry li {
+				margin: 5px 0;
+				line-height: 1.4;
+			}
+			.entry li i{
+				font-weight: bold
+			}
+			ul {
+				padding-left: 10px;
+			}
+			
+		</style>
+	</head>
 
-<body>
-	<header>
-		<div id="who">
-			<div id="name">TRISHUL GOEL</div>
-			<div id="designation">Frontend developer</div>
-		</div>
-		<div id="details">
-			<div class="info"><span>+49-1743256880</span><span><img src="./phone.png"/></span></div>
-			<div class="info"><span>trishul.goel@gmail.com</span><span><img src="./mail.png"/></span></div>
-			<div class="info"><span>Munich, Germany</span><span><img src="./location.png"/></span></div>
-		</div>
-	</header>
-	<section id="experience">
-		<div class="heading">
-			<div>EXPERIENCE</div>
-			<div class="dash"></div>
-		</div>
-		<div class="details">
-			<div class="entry">
-				<div class="head"><span>Frontend Developer, Cliqz GmbH</span><span class="tenure">2018 - Present</span></div>
-				<div>Munich, Germany</div>
-				<p>Developing Open Source Cliqz browser (fork of Firefox). Mainly working on Addon Manager component, Profile Migration, Preferences.</br>
-					Writing Experimental webextension APIs for Cliqz extension (packed as system addon for Cliqz Browser).</p>
+	<body>
+		<header>
+			<div id="who">
+				<div id="name">TRISHUL GOEL</div>
+				<div id="designation">Frontend developer</div>
 			</div>
-			<div class="entry">
-				<div class="head"><span>Frontend Developer, Ticketmaster</span><span class="tenure">2017 - 2018</span></div>
-				<div>New Delhi, India</div>
-				<p>Developing reusable components in React-Redux for the account manager product.</br>
-				   Creating lambda functions for the CMS project.</br>
-					 Writing test cases in enzyme-jest for the react setup.</p>
+			<div id="details">
+				<div class="info"><span>trishul.goel@gmail.com</span><span><img src="./mail.png"/></span></div>
+				<div class="info"><span>Munich, Germany</span><span><img src="./location.png"/></span></div>
 			</div>
-			<div class="entry">
-				<div class="head"><span>Software Developer, Meritnation</span><span class="tenure">2015 - 2017</span></div>
-				<div>New Delhi, India</div>
-				<p>	Created PWA for the educational courses portal with offline, push support.</br>
-				    Managed and added features in company's CRM (built on cakePHP).</br>
-					Created Notification engine using Node/Firebase/FCM to take care of mails/SMSs.</br>
-					Built a teacher/student interaction web app which included video broadcasting, whiteboard, with webRTC, socket.io and MEAN stack.</p>
+		</header>
+		<section id="experience">
+			<div class="heading">
+				<div>Open Source</div>
+				<div class="dash"></div>
 			</div>
-		</div>
-	</section>
-	<section id="experience">
-		<div class="heading">
-			<div>EDUCATION</div>
-			<div class="dash"></div>
-		</div>
-		<div class="details">
-			<div class="entry">
-				<div class="head"><span>Masters in Computer Application</span><span class="tenure">2014</span></div>
-				<p>Completed MCA from University of Rajasthan, India</p>
+			<div class="details">
+				<div class="entry">
+					<ul>
+						<li>Fixed bugs, submitted patches in Firefox (Gecko) <b>[6]</b></li>
+						<li>Fixed issues for addons.mozilla.org frontend, built on React-Redux <b>[7]</b></li>
+						<li>Authored browser extensions for Firefox and Chrome  <b>[1][8]</b>			</li>
+						<li>Creator of webextensions.tech - scaffolding tool for browser extensions <b>[4]</b></li>
+						<li>Creator of Measure-it, recommended extension with <b>25K+</b> users for Firefox	<b>[5]</b></li>
+						<li>Created video tutorials to help developers with extension development <b>[2]</b></li>
+						<li>Conference speaker in & around Eruope, advocate about modern JS, PWA and browser extensions <b>[3]</b></li>
+						<li>Community Builder & code mentor - worked to build a dev community in Delhi/Rajasthan region.					</li>
+						<li>Addon reviewer for addons.mozilla.org</li>
+					</ul>
+				</div>
 			</div>
-			<div class="entry">
-					<div class="head"><span>Bachelors in Computer Application</span><span class="tenure">2011</span></div>
-				<p>Completed BCA from University of Rajasthan, India</p>
+		</section>
+		<section id="experience">
+			<div class="heading">
+				<div>Links </div>
+				<div class="dash"></div>
 			</div>
-		</div>
-	</section>
-	<section id="experience">
-		<div class="heading">
-			<div>Open Source</div>
-			<div class="dash"></div>
-		</div>
-		<div class="details">
-			<div class="entry">
-				<div class="head"><span>Mozilla</span></div>
-				<ul>
-					<li>Fixing bugs for addons.mozilla.org frontend, built on React-Redux</br><i>https://github.com/mozilla/addons-frontend/commits?author=tsl143</i></li>
-					<li>Pushing patches for Addon manager component in Gecko</br><i>https://github.com/mozilla/gecko-dev/commits?author=tsl143</i></li>
-					<li>Developed cross browser extensions with WebextensionAPIs</br><i>https://addons.mozilla.org/en-US/firefox/user/trishulgoel</i></li>
-					<li>Creator of <i>webextensions.tech</i> and <i>Measure-it</i> extension</br><i>https://addons.mozilla.org/en-US/firefox/addon/measure-it</i> (25K+ users)</li>
-					<li>Creating video tutorials to help developers with extension development</br><i>https://www.youtube.com/c/trishulgoel</i></li>
-					<li>Tech speaker and evangelist for browser extensions and PWAs, spoke at 9 international conferences around globe including:</br>
-						- ScotlandJS, Edinburgh<br/>
-						- Frontend Connect, Poland<br/>
-						- FOSDEM, Brussels<br/>
-						- JSFest, Kiev<br/>
-						<i>https://tinyurl.com/tslspeaks/</i></li>
-				</ul>
+			<div class="details">
+				<div class="entry">
+					<ul>
+						<li>
+							<a href="https://github.com/tsl143" target="_blank" rel="noopener noreferrer">
+								https://github.com/tsl143
+							</a>
+						</li>
+						<li>
+							<a href="https://in.linkedin.com/in/trishul" target="_blank" rel="noopener noreferrer">
+								https://in.linkedin.com/in/trishul
+							</a>
+						</li>
+						<li>
+							<a href="https://reps.mozilla.org/u/trishul" target="_blank" rel="noopener noreferrer">
+								https://reps.mozilla.org/u/trishul
+							</a>
+						</li>
+						<li>
+							<a href="https://addons.mozilla.org/user/trishulgoel" target="_blank" rel="noopener noreferrer">
+								https://addons.mozilla.org/user/trishulgoel <b>[1]</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/c/trishulgoel" target="_blank" rel="noopener noreferrer">
+								https://www.youtube.com/c/trishulgoel <b>[2]</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://tinyurl.com/tslspeaks" target="_blank" rel="noopener noreferrer">
+								https://tinyurl.com/tslspeaks  <b>[3]</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://webextensions.tech" target="_blank" rel="noopener noreferrer">
+								https://webextensions.tech <b>[4]</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://addons.mozilla.org/en-US/firefox/addon/measure-it" target="_blank" rel="noopener noreferrer">
+								https://addons.mozilla.org/en-US/firefox/addon/measure-it <b>[5]</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/mozilla/gecko-dev/commits?author=tsl143" target="_blank" rel="noopener noreferrer">
+								https://github.com/mozilla/gecko-dev/commits?author=tsl143 <b>[6]</b>	
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/mozilla/addons-frontend/commits?author=tsl143" target="_blank" rel="noopener noreferrer">
+								https://github.com/mozilla/addons-frontend/commits?author=tsl143 <b>[7]</b>	
+							</a>
+						</li>
+						<li>
+							<a href="https://chrome.google.com/webstore/search/trishul?_category=extensions" target="_blank" rel="noopener noreferrer">
+								https://chrome.google.com/webstore/search/trishul?_category=extensions <b>[8]</b>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section id="experience">
-		<div class="heading">
-			<div>Links </div>
-			<div class="dash"></div>
-		</div>
-		<div class="details">
-			<div class="entry">
-				<ul>
-					<li><i>http://github.com/tsl143/</i></li>
-					<li><i>https://www.linkedin.com/in/trishul</i></li>
-					<li><i>https://reps.mozilla.org/u/trishul</i></li>
-					<li><i>https://mozillians.org/en-US/u/trishul</i></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-</body>
-
+		</section>
+	</body>
 </html>
